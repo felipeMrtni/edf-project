@@ -23,7 +23,7 @@
     height: 100%;
     z-index: 1;
     margin: 0 auto;
-    padding: 4rem;
+    padding: 0 8rem;
 }
 
 .navbar-logo {
@@ -62,5 +62,11 @@
     transform: all 0.3s ease;
 }
 
+.home {
+    height: 45rem;
+    background-image: url('../images/home-img.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 
 
