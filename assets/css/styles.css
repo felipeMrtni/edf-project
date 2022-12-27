@@ -10,10 +10,11 @@
     position: sticky;
     top: 0;
     z-index: 999;
-    height: 10rem;
-    background: #56ab2f;  /* fallback for old browsers */
-    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);  /* Chrome 10-25, Safari 5.1-6 */
-    background: linear-gradient(to right, #a8e063, #56ab2f); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 6rem;
+    background: #f5f5f5;
+    /* background: #56ab2f;
+    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+    background: linear-gradient(to right, #a8e063, #56ab2f); */
 }
 
 .navbar-container {
@@ -47,7 +48,9 @@
 }
 
 .navbar-links {
-    color: #f5f5f5;
+    color: #56ab2f;
+    color: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+    color: linear-gradient(to right, #a8e063, #56ab2f);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -58,12 +61,20 @@
 }
 
 .navbar-links:hover{
-    text-shadow: 0 0 20px white;
+    text-shadow: 0 0 20px rgb(8, 95, 20);
     transform: all 0.3s ease;
 }
 
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
 .home-section {
-    height: 45rem;
+    height: 49rem;
+    width: 100%;
     background-image: url('../images/home-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
@@ -81,9 +92,9 @@
     align-items: center;
     font-size: 8rem;
     color: rgb(8, 97, 8);
-    width: 25rem;
-    height: 25rem;
-    border-radius: 20rem;
+    width: 20rem;
+    height: 20rem;
+    border-radius: 15rem;
     background: radial-gradient(#a8e063, #56ab2f);
 }
 
@@ -149,10 +160,52 @@
 /* --------------------------------------------------------------------------- */
 
 .about-section {
-    height: 45rem;
+    display: grid;
+    height: 49rem;
+    width: 1400px;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border: 2px solid black;
+    padding: 1rem;
+    grid-template-areas:
+    "abImg abImg abTitle abTitle"
+    "abImg abImg abText abText"
+    "abImg abImg abText abText"
+    "miTitle miTitle miImg miImg"
+    "miText miText miImg miImg"
+    "miText miText miImg miImg"
+    ;
 }
 
 .about-section img {
     max-width: 40rem;
 }
 
+.about-img {
+    grid-area: abImg;
+}
+
+.about-title {
+    grid-area: abTitle;
+    font-size: 2.5rem;
+}
+
+.about-text {
+    grid-area: abText;
+    font-size: 2rem;
+}
+
+.mission-img {
+    grid-area: miImg;
+}
+
+.mission-title {
+    grid-area: miTitle;
+    font-size: 2.5rem;
+}
+
+.mission-text {
+    grid-area: miText;
+    font-size: 2rem;
+}
