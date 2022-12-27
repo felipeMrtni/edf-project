@@ -221,7 +221,7 @@
 .about-text {
     grid-area: abText;
     font-size: 2rem;
-    text-align: start;
+    text-align: justify;
 }
 
 .mission-img {
@@ -237,7 +237,7 @@
 .mission-text {
     grid-area: miText;
     font-size: 2rem;
-    text-align: start;
+    text-align: justify;
 }
 
 .services-section {
