@@ -21,11 +21,11 @@
 .navbar-container {
     display: flex;
     justify-content: space-between;
-    width: 100%;
+    width: 1400px;
     height: 100%;
     z-index: 1;
-    margin: 0 auto;
-    padding: 0 8rem;
+    margin: 0 8rem;
+    /* padding: 0 8rem; */
 }
 
 .navbar-logo {
@@ -58,12 +58,18 @@
     width: 10rem;
     text-decoration: none;
     height: 100%;
-    transition: all 0.3s ease;
+    transition: all 0.7s ease;
 }
 
 .navbar-links:hover{
-    text-shadow: 0 0 20px rgb(8, 95, 20);
-    transform: all 0.3s ease;
+    border-bottom: 1rem solid #428323;
+    transition: all 0.7s ease;
+}
+
+.highlight {
+    background: #428323;
+    color: #a8e063;
+    transition: all 0.7s ease;
 }
 
 .container {
@@ -83,6 +89,7 @@
     background-image: url('../images/home-img.jpg');
     background-repeat: no-repeat;
     background-size: cover;
+    background-position: center;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -184,6 +191,15 @@
   
 /* --------------------------------------------------------------------------- */
 
+.secao {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1400px;
+}
+
 .about-section {
     position: relative;
 }
@@ -205,12 +221,9 @@
 .about-container {
     position: relative;
     display: grid;
-    height: 49rem;
-    width: 1400px;
-    justify-content: center;
     align-items: center;
     text-align: center;
-    color: rgb(8, 71, 8);;
+    color: rgb(8, 71, 8);
     padding: 2rem;
     grid-column-gap: 4rem;
     grid-row-gap: 1rem;
@@ -225,7 +238,7 @@
 }
 
 .about-container img {
-    max-width: 40rem;
+    max-width: 100%;
 }
 
 .about-img {
@@ -271,14 +284,6 @@
     background: #56ab2f;
     background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
     background: linear-gradient(to right, #a8e063, #56ab2f);
-}
-
-.secao {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    width: 1400px;
 }
 
 .services-container {
@@ -364,13 +369,14 @@
 .clients-container {
     background-image: url("../images/mapa.jpg");
     background-repeat: no-repeat;
-    background-size: 35rem;
-    background-position: center;
+    background-size: 34rem;
+    background-position: 24rem 2rem;
     text-align: center;
     display: grid;
+    grid-column-gap: 15rem ;
     grid-template-areas:
-    "energia mineradoras"
-    "industria construtoras"
+    "energia construtoras"
+    "industria mineradoras"
     "tecnico tecnico"
     ;
 }
@@ -378,18 +384,19 @@
 .clients-container h3 {
     margin-bottom: 0.5rem;
     font-size: 1.5rem;
-    font-weight: 400;
-    text-decoration: underline;
+    font-weight: bold;
+    color: #254914;
+}
+
+.clients-logos {
+    margin: 1rem;
+    margin-bottom: 3rem;
+    padding: 1.5rem;
 }
 
 .clients-logos img {
     height: 5rem;
     padding: 1rem;
-}
-
-.clients-logos {
-    margin: 1rem;
-    padding: 1.5rem;
 }
 
 .energia {
@@ -398,6 +405,7 @@
 }
 
 .mineradoras {
+    padding-top: 4rem;
     grid-area: mineradoras;
     text-align: end;
 }
@@ -408,6 +416,7 @@
 }
 
 .industria {
+    padding-top: 4rem;
     grid-area: industria;
     text-align: start;
 }
@@ -417,19 +426,34 @@
     grid-area: tecnico;
 }
 
-.contact-container {
-    display: flex;
-    width: 100%;
+footer {
     justify-content: center;
     align-items: center;
     text-align: center;
-    padding: 2rem;
     height: 100%;
+    width: 100%;
+    background: linear-gradient(#a9cc56, #428323)
+}
+
+.contato {
+    background: none;
+    margin: 0;
+}
+
+.contact-container {
+    display: flex;
+    padding-bottom: 2rem;
     font-size: 1.5rem;
+    line-height: 2rem;
+    color: rgb(8, 71, 8);
 }
 
 .contact-container i {
     margin-bottom: 1.5rem;
+}
+
+.contact-subtitle {
+    font-weight: bolder;
 }
 
 .email-box {
@@ -440,16 +464,205 @@
     width: 100%;
 }
 
-footer {
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    height: 100%;
-    width: 100%;
-    background: linear-gradient(#bae063, #56ab2f)
+@media (max-width: 1285px) {
+    .navbar{
+
+    }
+
+    .navbar-container {
+
+    }
+
+    .navbar-item {
+
+    }
+
+    .navbar-links {
+
+    }
+
+    .navbar-logo {
+
+    }
+
+    .navbar-menu {
+
+    }
+
+    .clients-container {
+        grid-column-gap: 13rem
+    }
 }
 
-.contato {
-    background: none;
-    margin: 0;
+@media (max-width: 1200px) {
+    .clients-container {
+        background-position: 16rem 2rem;
+    }
+}
+
+@media (max-width: 1100px) {
+    .navbar {
+    }
+    
+    .navbar-container {
+    }
+    
+    .navbar-logo {
+    }
+    
+    .navbar-logo img {
+    }
+    
+    .navbar-menu {
+    }
+    
+    .navbar-item {
+    }
+    
+    .navbar-links {
+    }
+    
+    .navbar-links:hover{
+    }
+    
+    .highlight {
+    }
+    
+    .container {
+    }
+    
+    .home-section {
+    }
+    
+    .home-container {
+    }
+    
+    .home-edf {
+    }
+    
+    .about-section {
+    }
+    
+    .about-section::before {
+    }
+    
+    .about-container {
+    }
+    
+    .about-container img {
+    }
+    
+    .about-img {
+    }
+    
+    .about-title {
+    }
+    
+    .about-text {
+    }
+    
+    .mission-img {
+    }
+    
+    .mission-title {
+    }
+    
+    .mission-text {
+    }
+    
+    .section-title {
+    }
+    
+    .secao {
+    }
+    
+    .services-container {
+    }
+    
+    .services-container h3 {
+    }
+    
+    .services-container li {
+    }
+    
+    .services-img {
+    }
+    
+    .licenca {
+    }
+    
+    .gestao {
+    }
+    
+    .especificos {
+    }
+    
+    .monitoramentos {
+    }
+    
+    .estudos {
+    }
+    
+    .estudos-container {
+    }
+    
+    .estudos-ladoA {
+    }
+    
+    .estudos-ladoB {
+    }
+    
+    .projetos {
+    }
+    
+    .clients-section {
+    }
+    
+    .clients-container {
+    }
+    
+    .clients-container h3 {
+    }
+    
+    .clients-logos {
+    }
+    
+    .clients-logos img {
+    }
+    
+    .energia {
+    }
+    
+    .mineradoras {
+    }
+    
+    .construtoras {
+    }
+    
+    .industria {
+    }
+    
+    .tecnico {
+    }
+    
+    footer {
+    }
+    
+    .contato {
+    }
+    
+    .contact-container {
+    }
+    
+    .contact-container i {
+    }
+    
+    .contact-subtitle {
+    }
+    
+    .email-box {
+    }
+    
+    .phone-box {
+    }
 }
