@@ -12,7 +12,7 @@ function getScrollTopByHref (element) {
 function scrollToIdOnClick(event) {
     event.preventDefault();
 
-    const to = getScrollTopByHref(event.target) - 96;
+    const to = getScrollTopByHref(event.target) - 64;
 
     scrollToPosition(to);
 }
@@ -37,28 +37,28 @@ const highlightMenu = () => {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 1300) {
+    } else if (window.innerWidth > 960 && scrollPos < 1400) {
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         servicesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 3150) {
+    } else if (window.innerWidth > 960 && scrollPos < 3250) {
         servicesMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         clientMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 3745) {
+    } else if (window.innerWidth > 960 && scrollPos < 3945) {
         clientMenu.classList.add('highlight');
         servicesMenu.classList.remove('highlight');
         contactMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 960 && scrollPos < 4400) {
+    } else if (window.innerWidth > 960 && scrollPos < 6000) {
         contactMenu.classList.add('highlight');
         clientMenu.classList.remove('highlight');
         return;
     }
 
-    if((elem && window.innerWidth < 960 && scrollPos < 600) || elem) {
+    if((elem && window.innerWidth < 960 && scrollPos < 500) || elem) {
     elem.classList.remove('highlight');
     }
 }
