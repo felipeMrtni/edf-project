@@ -7,7 +7,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    font-size: 1.5rem;
+    font-size: 1.2rem;
     position: sticky;
     top: 0;
     z-index: 999;
@@ -55,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    width: 10rem;
+    width: 7rem;
     text-decoration: none;
     height: 100%;
     transition: all 0.7s ease;
@@ -78,13 +78,16 @@
     justify-content: center;
     align-items: center;
     background: #f5f5f5;
-    /* background: #56ab2f;
-    background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
+    /* background: #59f01362; */
+    /* background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
     background: linear-gradient(to right, #a8e063, #56ab2f); */
 }
 
 .home-section {
-    height: 49rem;
+    /* home menor  */
+    /* height: 100%; */
+    height: 37.1rem;
+    /* --------------------------- */
     width: 100%;
     background-image: url('../images/home-img.jpg');
     background-repeat: no-repeat;
@@ -104,6 +107,7 @@
     width: 24rem;
     height: 24rem;
     border-radius: 15rem;
+    transform: scale(0.8);
     background: white;
 }
 
@@ -117,7 +121,8 @@
     justify-content: center;
     align-items: center;
     width: 80%;
-    max-width: 1400px;
+    /* max-width: 1400px; */
+    background: #f5f5f5
 }
 
 .about-section {
@@ -135,7 +140,7 @@
     background-image: url("../images/logo-img.jpg");
     background-repeat: no-repeat;
     background-position: center;
-    background-size: 60rem;
+    background-size: 80%;
 }
 
 .about-container {
@@ -167,13 +172,13 @@
 
 .about-title {
     grid-area: abTitle;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .about-text {
     grid-area: abText;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
@@ -183,27 +188,28 @@
 
 .mission-title {
     grid-area: miTitle;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
 }
 
 .mission-text {
     grid-area: miText;
-    font-size: 2rem;
+    font-size: 1.5rem;
     text-align: justify;
 }
 
 .section-title {
     text-align: center;
-    font-size: 2.5rem;
+    font-size: 2rem;
     font-weight: bold;
     color: #f5f5f5;
-    margin-bottom: 2rem;
+    margin-bottom: 0rem;
     width: 100%;
     padding: 1rem;
-    background: #56ab2f;
+    /* background: #56ab2f; */
     background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
     background: linear-gradient(to right, #a8e063, #56ab2f);
+    border-radius: 0.5rem;
 }
 
 .services-container {
@@ -213,10 +219,36 @@
     grid-gap: 2rem 1rem;
     grid-template-columns: repeat(auto-fill, minmax(33.3333%, auto));
     grid-template-areas:
-    "projetos gestao img"
-    "especificos monitoramentos licenca"
-    "estudos estudos estudos"
-    ;
+    "projetos licenca"
+    "img1 img1"
+    "especificos monitoramentos"
+    "gestao img3"
+    "img2 img2"
+    "estudos estudos";
+}
+.services-img {
+    display: none;
+}
+
+.services-mobile-img {
+    display: block;
+    justify-self: center;
+    width: 100%;
+}
+
+.image-1 {
+    grid-area: img1;
+}
+
+.image-2 {
+    grid-area: img2;
+}
+
+.image-3 {
+    justify-self: center;
+    align-self: center;
+    max-width: 12rem;
+    grid-area: img3
 }
 
 .services-container h3 {
@@ -228,18 +260,17 @@
     margin-bottom: 1rem;
     width: 100%;
     background: linear-gradient(#a8e063, #56ab2f);
+    border-radius: 0.5rem;
+}
+
+.services ul {
+    padding-left: 1rem;
 }
 
 .services-container li {
-    font-size: 1.4rem;
+    font-size: 1rem;
     margin-bottom: 10px;
     line-height: 30px;
-}
-
-.services-img {
-    align-self: center;
-    justify-self: end;
-    grid-area: img;
 }
 
 .licenca {
@@ -289,11 +320,11 @@
 .clients-container {
     background-image: url("../images/mapa.jpg");
     background-repeat: no-repeat;
-    background-size: 34rem;
-    background-position: 17rem 7rem;
+    background-size: 26rem;
+    background-position: center 2rem;
     text-align: center;
     display: grid;
-    grid-column-gap: 15rem ;
+    grid-column-gap: 20%;
     grid-template-areas:
     "energia construtoras"
     "industria mineradoras"
@@ -301,21 +332,24 @@
     ;
 }
 
+.clients-map {
+    display: none;
+}
+
 .clients-container h3 {
     margin-bottom: 0.5rem;
-    font-size: 1.5rem;
+    font-size: 1rem;
     font-weight: bold;
     color: #254914;
 }
 
 .clients-logos {
     margin: 1rem;
-    margin-bottom: 3rem;
     padding: 1.5rem;
 }
 
 .clients-logos img {
-    height: 5rem;
+    height: 4rem;
     padding: 1rem;
 }
 
@@ -325,7 +359,6 @@
 }
 
 .mineradoras {
-    padding-top: 4rem;
     grid-area: mineradoras;
     text-align: end;
 }
@@ -336,7 +369,6 @@
 }
 
 .industria {
-    padding-top: 4rem;
     grid-area: industria;
     text-align: start;
 }
@@ -352,7 +384,7 @@ footer {
     text-align: center;
     height: 100%;
     width: 100%;
-    background: linear-gradient(#a9cc56, #428323)
+    background: linear-gradient(to right, #a8e063, #56ab2f);
 }
 
 .contato {
@@ -363,7 +395,7 @@ footer {
 .contact-container {
     display: flex;
     padding-bottom: 2rem;
-    font-size: 1.5rem;
+    font-size: 1.3rem;
     line-height: 2rem;
     color: rgb(8, 71, 8);
 }
@@ -386,37 +418,29 @@ footer {
 
 @media (max-width: 1285px) {
     .navbar{
-
     }
 
     .navbar-container {
-
     }
 
     .navbar-item {
-
     }
 
     .navbar-links {
-
     }
 
     .navbar-logo {
-
     }
 
     .navbar-menu {
-
     }
-
+    
     .clients-container {
-        grid-column-gap: 13rem
     }
 }
 
 @media (max-width: 1200px) {
     .clients-container {
-        background-position: center;
     }
 }
 
@@ -467,9 +491,26 @@ footer {
     }
     
     .about-container {
+        grid-template-areas:
+        "abTitle abTitle"
+        "abText abText"
+        "abText abText"
+        "abImg abImg"
+        "abImg abImg"
+        "abImg abImg"
+        "miTitle miTitle"
+        "miText miText"
+        "miText miText"
+        "miImg miImg"
+        "miImg miImg"
+        "miImg miImg"
+        ;
     }
     
     .about-container img {
+        width: 75%;
+        align-self: center;
+        justify-self: center;
     }
     
     .about-img {
@@ -507,7 +548,7 @@ footer {
     
     .services-img {
     }
-    
+
     .licenca {
     }
     
@@ -536,9 +577,6 @@ footer {
     }
     
     .clients-section {
-    }
-    
-    .clients-container {
     }
     
     .clients-container h3 {
@@ -584,5 +622,44 @@ footer {
     }
     
     .phone-box {
+    }
+}
+
+@media (max-width:970px) {
+    .services-container {
+        grid-template-areas:
+    "projetos licenca"
+    "img1 img1"
+    "especificos monitoramentos"
+    "gestao gestao"
+    "img2 img2"
+    "estudos estudos";
+    }
+
+    .image-3 {
+        display: none;
+    }
+
+    .gestao {
+        text-align: center;
+    }
+
+    .clients-container {
+        background-image: none;
+        grid-column-gap: 0;
+        grid-template-areas:
+        "mapImg mapImg"
+        "energia construtoras"
+        "industria mineradoras"
+        "tecnico tecnico"
+        ;
+    }
+
+    .clients-map {
+        margin-top: 2rem;
+        display: block;
+        justify-self: center;
+        grid-area: mapImg;
+        width: 70%;
     }
 }
