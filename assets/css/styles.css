@@ -179,7 +179,8 @@
 .about-text {
     grid-area: abText;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
+    align-self: baseline;
 }
 
 .mission-img {
@@ -195,7 +196,7 @@
 .mission-text {
     grid-area: miText;
     font-size: 1.5rem;
-    text-align: justify;
+    text-align: center;
 }
 
 .section-title {
@@ -260,6 +261,11 @@
     width: 100%;
     background: linear-gradient(#76ca55, #3d7921);
     border-radius: 0.5rem;
+}
+
+.services {
+    border-radius: 0.5rem;
+    background: #a8e06377;
 }
 
 .services ul {
