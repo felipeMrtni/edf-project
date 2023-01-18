@@ -206,7 +206,6 @@
     margin-bottom: 0rem;
     width: 100%;
     padding: 1rem;
-    /* background: #56ab2f; */
     background: -webkit-linear-gradient(to right, #a8e063, #56ab2f);
     background: linear-gradient(to right, #a8e063, #56ab2f);
     border-radius: 0.5rem;
@@ -299,14 +298,6 @@
 .estudos-container {
     display: flex;
     justify-content: space-between;
-}
-
-.estudos-ladoA {
-    /* width: 50%; */
-}
-
-.estudos-ladoB {
-    /* width: 50%; */
 }
 
 .projetos {
@@ -416,80 +407,7 @@ footer {
     width: 100%;
 }
 
-@media (max-width: 1285px) {
-    .navbar{
-    }
-
-    .navbar-container {
-    }
-
-    .navbar-item {
-    }
-
-    .navbar-links {
-    }
-
-    .navbar-logo {
-    }
-
-    .navbar-menu {
-    }
-    
-    .clients-container {
-    }
-}
-
-@media (max-width: 1200px) {
-    .clients-container {
-    }
-}
-
 @media (max-width: 1100px) {
-    .navbar {
-    }
-    
-    .navbar-container {
-    }
-    
-    .navbar-logo {
-    }
-    
-    .navbar-logo img {
-    }
-    
-    .navbar-menu {
-    }
-    
-    .navbar-item {
-    }
-    
-    .navbar-links {
-    }
-    
-    .navbar-links:hover{
-    }
-    
-    .highlight {
-    }
-    
-    .container {
-    }
-    
-    .home-section {
-    }
-    
-    .home-container {
-    }
-    
-    .home-edf {
-    }
-    
-    .about-section {
-    }
-    
-    .about-section::before {
-    }
-    
     .about-container {
         grid-template-areas:
         "abTitle abTitle"
@@ -511,117 +429,6 @@ footer {
         width: 75%;
         align-self: center;
         justify-self: center;
-    }
-    
-    .about-img {
-    }
-    
-    .about-title {
-    }
-    
-    .about-text {
-    }
-    
-    .mission-img {
-    }
-    
-    .mission-title {
-    }
-    
-    .mission-text {
-    }
-    
-    .section-title {
-    }
-    
-    .secao {
-    }
-    
-    .services-container {
-    }
-    
-    .services-container h3 {
-    }
-    
-    .services-container li {
-    }
-    
-    .services-img {
-    }
-
-    .licenca {
-    }
-    
-    .gestao {
-    }
-    
-    .especificos {
-    }
-    
-    .monitoramentos {
-    }
-    
-    .estudos {
-    }
-    
-    .estudos-container {
-    }
-    
-    .estudos-ladoA {
-    }
-    
-    .estudos-ladoB {
-    }
-    
-    .projetos {
-    }
-    
-    .clients-section {
-    }
-    
-    .clients-container h3 {
-    }
-    
-    .clients-logos {
-    }
-    
-    .clients-logos img {
-    }
-    
-    .energia {
-    }
-    
-    .mineradoras {
-    }
-    
-    .construtoras {
-    }
-    
-    .industria {
-    }
-    
-    .tecnico {
-    }
-    
-    footer {
-    }
-    
-    .contato {
-    }
-    
-    .contact-container {
-    }
-    
-    .contact-container i {
-    }
-    
-    .contact-subtitle {
-    }
-    
-    .email-box {
-    }
-    
-    .phone-box {
     }
 }
 
@@ -707,7 +514,7 @@ footer {
     }
 
     .navbar-menu.active {
-        background: #131313;
+        background: rgb(8, 71, 8);;
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -720,7 +527,7 @@ footer {
         height: 3px;
         margin: 5px auto;
         transition: all 0.3s ease;
-        background: #131313;
+        background: rgb(8, 71, 8);
     }
 
     .navbar-item {
@@ -732,9 +539,6 @@ footer {
         padding: 2rem;
         width: 100%;
         display: table;
-    }
-
-    .navbar-links:hover{
     }
 
     #mobile-menu {
@@ -759,9 +563,6 @@ footer {
 
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
-    }
-
-    .secao {
     }
 
     .services-container {
@@ -789,6 +590,4 @@ footer {
     .clients-logos img {
         height: 3rem;
     }
-
-
 }
