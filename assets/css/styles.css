@@ -447,10 +447,6 @@ footer {
         display: none;
     }
 
-    .services {
-
-    }
-
     .gestao {
         text-align: center;
     }
@@ -476,13 +472,11 @@ footer {
 
     .contact-container {
         flex-direction: column;
+        gap: 1rem;
     }
 }
 
 @media (max-width:800px) {
-    .navbar {
-    }
-
     .navbar-container {
         display: flex;
         justify-content: space-between;
@@ -498,9 +492,6 @@ footer {
         margin: 1rem;
     }
 
-    .navbar-logo img {
-    }
-
     .navbar-menu {
         display: grid;
         grid-template-columns: auto;
@@ -514,7 +505,7 @@ footer {
     }
 
     .navbar-menu.active {
-        background: rgb(8, 71, 8);;
+        background: rgb(8, 71, 8);
         top: 100%;
         opacity: 1;
         transition: all 0.5s ease;
@@ -565,7 +556,19 @@ footer {
         transform: translateY(-8px) rotate(-45deg);
     }
 
+    .secao {
+        width: 100%;
+        padding: 0.5rem;
+    }
+    .about-text {
+        font-size: 1rem;
+    }
+    .mission-text {
+        font-size: 1rem;
+    }
+
     .services-container {
+        padding: 1rem;
         grid-template-columns: auto;
         grid-template-areas:
     "projetos" 
@@ -587,7 +590,14 @@ footer {
         text-align: start;
     }
 
+    .clients-logos {
+        margin: 0;
+        padding: 0;
+    }
+
     .clients-logos img {
         height: 3rem;
     }
+
+
 }
