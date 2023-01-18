@@ -264,7 +264,7 @@
 }
 
 .services ul {
-    padding-left: 1rem;
+    padding: 0 1rem;
 }
 
 .services-container li {
@@ -302,11 +302,11 @@
 }
 
 .estudos-ladoA {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .estudos-ladoB {
-    width: 50%;
+    /* width: 50%; */
 }
 
 .projetos {
@@ -640,6 +640,10 @@ footer {
         display: none;
     }
 
+    .services {
+
+    }
+
     .gestao {
         text-align: center;
     }
@@ -661,6 +665,10 @@ footer {
         justify-self: center;
         grid-area: mapImg;
         width: 70%;
+    }
+
+    .contact-container {
+        flex-direction: column;
     }
 }
 
@@ -752,4 +760,35 @@ footer {
     #mobile-menu.is-active .bar:nth-child(3) {
         transform: translateY(-8px) rotate(-45deg);
     }
+
+    .secao {
+    }
+
+    .services-container {
+        grid-template-columns: auto;
+        grid-template-areas:
+    "projetos" 
+    "licenca"
+    "img1"
+    "especificos" 
+    "monitoramentos"
+    "gestao"
+    "img2"
+    "estudos";
+    }
+
+    .estudos-container {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    .gestao {
+        text-align: start;
+    }
+
+    .clients-logos img {
+        height: 3rem;
+    }
+
+
 }
