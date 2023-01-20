@@ -226,6 +226,7 @@
     "img2 img2"
     "estudos estudos";
 }
+
 .services-img {
     display: none;
 }
@@ -251,31 +252,53 @@
     grid-area: img3
 }
 
-.services-container h3 {
+.services {
+    display: flex;
+    flex-direction: column;
+    border-radius: 0.5rem;
+    background: #a8e06377;
+}
+
+.acordeon-question {
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    width: 100%;
+    cursor: default;
+}
+
+.acordeon-question span {
     text-align: center;
     font-size: 1.2rem;
     font-weight: bold;
     color: #f5f5f5;
     padding: 0.3rem;
-    margin-bottom: 1rem;
+    /* margin-bottom: 1rem; */
     width: 100%;
     background: linear-gradient(#76ca55, #3d7921);
     border-radius: 0.5rem;
 }
 
-.services {
-    border-radius: 0.5rem;
-    background: #a8e06377;
+.icon {
+    position: absolute;
+    display: none;
+    right: 1rem;
+    color: #f5f5f5;
+    /* display: none; */
 }
 
-.services ul {
+.acordeon-answer {
     padding: 0 1rem;
-}
-
-.services-container li {
     font-size: 1rem;
     margin-bottom: 10px;
-    line-height: 30px;
+    line-height: 2rem;
+    height: 100%;
+    width: 100%;
+}
+
+.acordeon-answer li {
+    display: block;
 }
 
 .licenca {
@@ -586,6 +609,58 @@ footer {
     "img2"
     "estudos";
     }
+
+    .services {
+        display: flex;
+        flex-direction: column;
+        height: 100%;
+    }
+
+    /* .acordeon-question {
+        display: flex;
+        cursor: pointer;
+    } */
+
+    .mobileQuestion {
+        display: flex;
+        cursor: pointer;
+    }
+
+    /* .icon {
+        display: block;
+    } */
+
+    .mobileIcon  {
+        display: block;
+    }
+    
+    /* .acordeon-answer {
+        display: block;
+        height: 100%;
+        margin-bottom: 0;
+        transition: all 0.5s ease;
+    } */
+
+    .mobileAnswer {
+        display: block;
+        height: 100%;
+        margin-bottom: 0;
+        transition: all 0.5s ease;
+    }
+
+    /* .acordeon-answer li {
+        display: none;
+        transition: all 0.5s ease;
+    } */
+
+    .mobileLi {
+        display: none;
+        transition: all 0.5s ease;
+    }
+    
+    /* .acordeon-answer li.acord-active {
+        display: block;
+    } */
 
     .estudos-container {
         flex-direction: column;
