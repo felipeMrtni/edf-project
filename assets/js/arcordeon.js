@@ -10,7 +10,7 @@ const questions = document.querySelectorAll('.acordeon-question');
 const answers = document.querySelectorAll('.acordeon-answer');
 const answers_list = document.querySelectorAll('.acordeon-answer li');
 const icons = document.querySelectorAll('.icon');
-const areaListener = new AbortController();
+let areaListener = new AbortController();
 
 // let teste = () => {
 //     const itemButton = document.querySelectorAll('.mobileService');
@@ -70,6 +70,7 @@ function mobileMode () {
 function removeEvent() {
     console.log (" ----- entrou no removeEvent")
     areaListener.abort();
+    areaListener = new AbortController();
     // questions.removeEventListener('click', f, true)
     // () => {
     //     const answer_acordeon = item.querySelector('.mobileAnswer');
@@ -111,7 +112,7 @@ function checkActive(item, answer, answer_active) {
         if (answer_active) {
             answer_active.classList.remove("active");
             answer_list.forEach((li) => (li.style.display = 'none'));
-            // answer.style.height = 0;
+            // answer_list.style.height = 0;
             console.log(" ------ entrou no answer_active");
         }
 
