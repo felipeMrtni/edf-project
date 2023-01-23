@@ -108,7 +108,7 @@ function checkActive(item, answer, answer_active) {
 function defaultConfig(item) {
     const icons_acordeon = document.querySelectorAll(".icon");
     const answers_acordeon = document.querySelectorAll(".mobileAnswer")
-    let answers_list_acordeon= document.querySelectorAll(".mobileAnswer li");
+    const answers_list_acordeon= document.querySelectorAll(".mobileAnswer li");
     console.log(" ------ entrou no defaultConfig")
     icons_acordeon.forEach((item) => (item.style.rotate = "0deg"));
     answers_list_acordeon.forEach((item) => (item.style.display = 'none'));

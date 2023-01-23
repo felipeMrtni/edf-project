@@ -632,6 +632,13 @@ footer {
         cursor: pointer;
     }
 
+    .mobileQuestion span{
+        font-size: 1rem;
+        padding: 0.5rem 2rem;
+    }
+
+
+
     /* .icon {
         display: block;
     } */
