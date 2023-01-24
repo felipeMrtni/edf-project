@@ -39,7 +39,7 @@ function desktopMode () {
     icons.forEach((item) => (item.classList.remove('mobileIcon')));
 
     // areaListener.abort();
-    defaultConfig()
+    defaultConfig();
     removeEvent();
 }
 
@@ -114,9 +114,6 @@ function defaultConfig(item) {
     console.log(" ------ entrou no defaultConfig")
     icons_acordeon.forEach((item) => (item.style.rotate = "0deg"));
     answers_list_acordeon.forEach((item) => (item.style.display = 'none'));
-    // answers_list.forEach((item) => (item.style.height = 0));
     answers_acordeon.forEach((item) => (item.style.height = 0));
     answers_acordeon.forEach((item) => (item.classList.remove('active')));
-
-
 }
