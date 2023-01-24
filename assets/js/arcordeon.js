@@ -34,10 +34,12 @@ function desktopMode () {
     questions.forEach((item) => (item.classList.remove('mobileQuestion')));
     // questions.forEach((item) => (item.removeEventListener('click', )));
     answers.forEach((item) => (item.classList.remove('mobileAnswer')));
+    answers.forEach((item) => (item.style.height = '100%'));
     answers_list.forEach((item) => (item.style.display= 'block'));
     icons.forEach((item) => (item.classList.remove('mobileIcon')));
 
     // areaListener.abort();
+    defaultConfig()
     removeEvent();
 }
 
@@ -114,5 +116,7 @@ function defaultConfig(item) {
     answers_list_acordeon.forEach((item) => (item.style.display = 'none'));
     // answers_list.forEach((item) => (item.style.height = 0));
     answers_acordeon.forEach((item) => (item.style.height = 0));
+    answers_acordeon.forEach((item) => (item.classList.remove('active')));
+
 
 }
