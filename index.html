@@ -234,44 +234,42 @@
             <section class="contact-section secao">
                 <h2 class="section-title">Contato</h2>
                 <div class="contact-container">
-                    <img src="./assets/images/edf-img.jpg" alt="" srcset="">
-                    <form action="" class="form">
-                        <div class="input-box">
+                    <img class="contact-item contact-img" src="./assets/images/edf-img.jpg" alt="" srcset="">
+                    <div class="contact-item contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti?</div>
+                    <form action="" class="contact-item contact-form">
+
+                        <div class="form-input-box">
                             <input type="text" class="input-area name-input" name="name" value="" placeholder="Nome completo">
                             <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon nameError-icon">
                         </div>
                         <span class="error-msg name-msg"></span>
-                        <div class="input-box">
+
+                        <div class="form-input-box">
                             <input type="email" class="input-area email-input" name="email" value="" placeholder="email">
                             <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon emailError-icon">
                         </div>
                         <span class="error-msg email-msg"></span>
-                        <div class="input-box text-area">
-                            <textarea name="text-area" id="text-area" cols="30" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
-                        </div>
+
+                        <textarea class="form-text-area" name="text-area" id="text-area" cols="30" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
                         <span class="error-msg text-area-msg"></span>
+
                     </form>
                 </div>
             </section>
         </main>
         <footer>
-            <section class="footer-section" id="contact">
-                <!-- <h2 class="section-title contato">Contato</h2> -->
-                <div class="footer-container">
-                    <div class="footer-box">
-                        <i class="fa fa-envelope" style="font-size:60px;color:white"></i>
-                        <p class ="footer-subtitle">Email: </p>
-                        <p>edfambiental@gmail.com</p>
-                    </div>
-                    <div class="footer-box">
-                        <i class="fa fa-whatsapp" style="font-size:60px;color:white"></i>
-                        <p class="footer-subtitle">Telefone:</p>
-                        <p>(16) 98132-3021<br>
-                        (34) 99236-5897<br>
-                        (32) 99949-5998</p>
-                    </div>
-                </div>
-            </section>
+            <div class="footer-box">
+                <i class="fa fa-envelope" style="font-size:60px;color:white"></i>
+                <p class ="footer-subtitle">Email: </p>
+                <p>edfambiental@gmail.com</p>
+            </div>
+            <div class="footer-box">
+                <i class="fa fa-whatsapp" style="font-size:60px;color:white"></i>
+                <p class="footer-subtitle">Telefone:</p>
+                <p>(16) 98132-3021<br>
+                (34) 99236-5897<br>
+                (32) 99949-5998</p>
+            </div>
         </footer>
         <script src="./assets/js/app.js"></script>
         <script src="./assets/js/arcordeon.js"></script>
