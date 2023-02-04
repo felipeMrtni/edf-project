@@ -550,14 +550,41 @@
     opacity: 0.4;
 }
 
+.display-border {
+    border: 3px solid #cd2424;
+}
+
+.display-border:focus {
+    border: 3px solid #cd2424;
+}
+
 .error-icon {
     position: absolute;
     right: 1rem;
-    /* top: 1rem; */
+    display: none;
 }
 
 .error-msg {
-    /* position: absolute; */
+    font-size: 0.8rem;
+    color: #cd2424;
+    padding-bottom: 0.3rem;
+    display: none;
+}
+
+.nameError-msg {
+    display: none;
+}
+
+.emailError-msg {
+    display: none;
+}
+
+.textAreaError-msg{
+    display: none;
+}
+
+.display-error {
+    display: block;
 }
 
 .form-text-area {
@@ -586,11 +613,10 @@
     margin-top: 1rem;
     border-radius: 1rem;
     background: #a8e063;
-    /* outline: none; */
-    border: 1px solid #0000005a;
-    -webkit-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
-    -moz-box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
-    box-shadow: 0px 0px 7px 1px rgba(0,0,0,0.75);
+    border: none;
+    -webkit-box-shadow: 0px 0px 3px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 0px 3px rgba(0,0,0,0.75);
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.75);
 }
 
 /* --------------------------------------------------------------------------------------------------- */
