@@ -634,7 +634,6 @@
 /* --------------------------------------------------------------------------------------------------- */
 footer {
     display: flex;
-    flex-wrap: wrap;
     /* justify-content: center;
     align-items: center; */
     text-align: center;
@@ -892,7 +891,7 @@ footer {
         height: var(--height-mobile-clients-logo-img);
     }
 
-    .contact-container {
-
+    footer {
+        flex-wrap: wrap;
     }
 }
