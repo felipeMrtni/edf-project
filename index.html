@@ -236,26 +236,26 @@
                 <div class="contact-container">
                     <img class="contact-item contact-img" src="./assets/images/edf-img.jpg" alt="" srcset="">
                     <div class="contact-item contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti?</div>
-                    <form action="" class="contact-item contact-form" name="contactForm">
+                    <form action="https://formsubmit.co/felipecmartini@gmail.com" method="POST" class="contact-item contact-form" name="contactForm" required>
 
                         <div class="form-input-box">
-                            <input type="text" class="input-area input-check name-input" name="name" value="" placeholder="Nome completo">
+                            <input type="text" name="nome" class="input-area input-check name-input"  value="" placeholder="Nome completo" required>
                             <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon nameError-icon">
                         </div>
                         <span class="error-msg nameError-msg">faeuhifiauhiauehgau</span>
 
                         <div class="form-input-box">
-                            <input type="email" class="input-area input-check email-input" name="email" value="" placeholder="email">
+                            <input type="email" name="email" class="input-area input-check email-input"  value="" placeholder="email" required>
                             <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon emailError-icon">
                         </div>
                         <span class="error-msg emailError-msg">aeguihioauhgiaoeuhgaeiughae</span>
 
                         <div class="form-input-box">
-                            <textarea class="input-check text-area-input" name="textArea" id="text-area" cols="30" rows="10" placeholder="Deixe aqui sua mensagem"></textarea>
+                            <textarea class="input-check text-area-input" name="mensagem" id="text-area" cols="30" rows="10" placeholder="Deixe aqui sua mensagem" required></textarea>
                             <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon textAreaError-icon">
                         </div>
                         <span class="error-msg textAreaError-msg">aeoighoaeghoaeghoaegh</span>
-                        <input type="submit" class="form-submit-button" value="Enviar" name="submitButton">
+                        <button type="submit" class="form-submit-button" id="formButton">Enviar</button>
                     </form>
                 </div>
             </section>
@@ -269,9 +269,7 @@
             <div class="footer-box">
                 <i class="fa fa-whatsapp" style="font-size:60px;color:white"></i>
                 <p class="footer-subtitle">Telefone:</p>
-                <p>(16) 98132-3021<br>
-                (34) 99236-5897<br>
-                (32) 99949-5998</p>
+                <p>(16) 98132-3021 || (34) 99236-5897 || (32) 99949-5998</p>
             </div>
         </footer>
         <script src="./assets/js/app.js"></script>

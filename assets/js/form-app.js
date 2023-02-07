@@ -1,5 +1,8 @@
 const form = document.forms['contactForm'];
+// const form = document.querySelector(".form")
 const inputBox = document.querySelectorAll(".form-input-box");
+const formButton = document.querySelector("#formButton");
+
 let nameInput = document.querySelector(".name-input").value;
 let emailInput = document.querySelector(".email-input").value;
 let textAreaInput = document.querySelector(".text-area-input").value;
@@ -25,25 +28,32 @@ form.addEventListener("focusout", (e) => {
     clearForm();
 })
 
-form.onsubmit = function(event) {
-    event.preventDefault();
-    
+formButton.addEventListener('click', function(e) {
+    // e.preventDefault();
+
     checkForm(nameInput, emailInput, textAreaInput);
 
-    reloadPage();
-}
+})
+
+// form.onsubmit = function(event) {
+//     event.preventDefault();
+    
+//     checkForm(nameInput, emailInput, textAreaInput);
+
+//     // reloadPage();
+// }
 
 function checkArea(name, input) {
 
     const valueRef = input.value;
 
-    if(name === "name") {
+    if(name === "nome") {
         checkNameForm(valueRef);
     }
     if (name === "email") {
         checkEmailForm(valueRef);
     }
-    if (name === "textArea") {
+    if (name === "mensagem") {
         checkTextAreaForm(valueRef);
     }
 }
@@ -152,7 +162,6 @@ function clearForm() {
     errors.forEach((item) => item.innerHTML = "");
     icons.forEach((item) => item.classList.remove("display-error"));
     borders.forEach((item) => item.classList.remove("display-border"));
-
 }
 
 function checkForm(name, email, textArea) {
