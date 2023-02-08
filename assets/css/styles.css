@@ -353,6 +353,7 @@
     display: flex;
     align-items: center;
     justify-content: flex-end;
+    gap: 1rem;
     width: var(--width-services-acordeon);
     cursor: default;
 }
@@ -376,10 +377,17 @@
 }
 
 .acordeon-answer {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
     padding: var(--padding-services-box);
     font-size: var(--font-services-list);
     line-height: var(--lineheight-services-list);
     width: var(--width-services-acordeon);
+}
+
+.acordeon-answer span {
+    display: block;
 }
 
 .acordeon-answer li {
@@ -832,16 +840,13 @@ footer {
         padding: var(--padding-mobile-services-container);
         grid-template-columns: auto;
         grid-template-areas:
-    "projetos" 
-    "gestao"
+    "licenca" 
     "img1"
-    "licenca"
-    "monitoramentos"
+    "projetos"
     "img2"
-    "especificos" 
     "analises"
     "img3"
-    "estudos";
+    "geoprocessamento"
     }
 
     .services {
@@ -864,7 +869,6 @@ footer {
     }
     
     .mobileAnswer {
-        display: block;
         margin-bottom: var(--margin-mobile-services-box);
         transition: all 0.5s ease;
     }
