@@ -305,15 +305,13 @@
     text-align: start;
     display: grid;
     grid-gap: 2rem 1rem;
-    grid-template-columns: repeat(auto-fill, minmax(33.3333%, auto));
+    /* grid-template-columns: repeat(auto-fill, minmax(33.3333%, auto)); */
+    grid-template-columns: 1fr 1fr;
     grid-template-areas:
-    "projetos gestao"
+    "licenca analises"
     "img1 img1"
-    "licenca monitoramentos"
-    "img2 img2"
-    "especificos analises"
-    "img3 img3"
-    "estudos estudos";
+    "projetos geoprocessamento"
+    "img2 img2";
 }
 
 .services-img {
@@ -339,6 +337,7 @@
     align-self: center; */
     /* max-width: var(--width-services-img-3); */
     grid-area: img3;
+    display: none;
 }
 
 .services {
@@ -702,13 +701,10 @@ footer {
 @media (max-width:970px) {
     .services-container {
         grid-template-areas:
-    "projetos gestao"
-    "img1 img1"
-    "licenca monitoramentos"
-    "img2 img2"
-    "especificos analises"
-    "img3 img3"
-    "estudos estudos";
+        "licenca analises"
+        "img1 img1"
+        "projetos geoprocessamento"
+        "img2 img2";
     }
 
     .gestao {
