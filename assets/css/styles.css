@@ -391,6 +391,7 @@
 
 .acordeon-answer li {
     display: block;
+    font-weight: var(--bold);
 }
 
 .licenca {
@@ -842,7 +843,11 @@ footer {
     "img2"
     "analises"
     "img3"
-    "geoprocessamento"
+    "geoprocessamento";
+    }
+
+    .image-3 {
+        display: block;
     }
 
     .services {
