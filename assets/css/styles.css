@@ -394,6 +394,15 @@
     font-weight: var(--bold);
 }
 
+.acordeon-answer li a {
+    text-decoration: none;
+    color: #254914;
+}
+
+.acordeon-answer li a:hover {
+    color: #428323;
+}
+
 .licenca {
     grid-area: licenca;
 }
