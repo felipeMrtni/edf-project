@@ -26,7 +26,7 @@
     --font-about-title: 2rem;
     --font-about-text: 1.5rem;
     --font-services-topics: 1.2rem;
-    --font-services-list: 1rem;
+    --font-services-list: 1.3rem;
     --font-clients-h3: 1rem;
     --font-footer-container: 1.3rem;
     --font-mobile-menu: 1.6rem;
@@ -380,29 +380,50 @@
     flex-direction: column;
     justify-content: flex-start;
     padding: var(--padding-services-box);
-    font-size: var(--font-services-list);
+    /* font-size: var(--font-services-list); */
     line-height: var(--lineheight-services-list);
     width: var(--width-services-acordeon);
 }
 
 .acordeon-answer span {
+    font-size: 1.2rem;
     display: block;
 }
 
 .acordeon-answer li {
     display: block;
-    font-weight: var(--bold);
+    pointer-events: none;
 }
 
 .acordeon-answer li a {
     text-decoration: none;
+    font-weight: var(--bold);
     color: #254914;
 }
 
-.acordeon-answer li a:hover {
+/* .acordeon-answer li a:hover {
     color: #428323;
+} */
+
+/* .acordeon-answer li:hover > :not(:hover){
+    opacity: .3;
+} */
+
+.acordeon-answer ul:hover > * {
+    opacity: .6;
 }
 
+.acordeon-answer ul {
+    pointer-events: none;
+}
+
+.acordeon-answer ul > * {
+    pointer-events: auto;
+}
+.acordeon-answer ul:hover > *:hover {
+    opacity: 1;
+}
+/* ---------------------------- testando hover -------------------  */
 .licenca {
     grid-area: licenca;
 }
