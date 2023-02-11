@@ -248,7 +248,7 @@ body {
     color: var(--color-clients-h3);
 }
 
-.intro::before {
+.title::after {
     content: "";
     width: 80%;
     height: 4px;
@@ -259,4 +259,14 @@ body {
 
 .intro {
     font-size: 1.2rem;
+    line-height: 1.5rem;
+}
+
+.intro::after {
+    content: "";
+    width: 80%;
+    height: 4px;
+    background: #a9be42;
+    display: block;
+    margin: 10px auto;
 }
