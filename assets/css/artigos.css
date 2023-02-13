@@ -106,12 +106,7 @@
 }
 
 body {
-    /* display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center; */
-    background: rgb(218, 218, 184);
-    height: 100vh;
+    background: #f5f5f5;
 }
 
 .navbar {
@@ -151,6 +146,10 @@ body {
     list-style: none;
 }
 
+.home-menu {
+    display: flex;
+}
+
 .navbar-item {
     height: var(--height-navbar-item);
 }
@@ -180,31 +179,18 @@ body {
 }
 
 .container {
-    /* background: #f5f5f5; */
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
     margin: 0 auto;
-    /* max-width: 80%; */
 }
 
-/* .home-section {
-    background-image: url("../images/artigos-title-img.jpg");
-    background-size: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    width: 100%;
-} */
 .home-section {
     background-image: url("../images/artigos-title-img.jpg");
     background-size: 100%;
-    /* height: var(--height-home-section); */
     width: var(--width-home-section);
     background-repeat: no-repeat;
-    /* background-size: cover; */
     background-position: center;
     display: flex;
     justify-content: center;
@@ -216,9 +202,7 @@ body {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    /* width: var(--width-home-container); */
     width: 20rem;
-    /* height: var(--height-home-container); */
     height: 20rem;
     border-radius: 15rem;
     transform: scale(0.6);
@@ -239,7 +223,6 @@ body {
 
 .title {
     text-align: center;
-    /* background: #a9be42; */
     width: 100%;
     padding: 1rem;
     border-radius: 1rem;
@@ -252,7 +235,7 @@ body {
     content: "";
     width: 80%;
     height: 4px;
-    background: #a9be42;
+    /* background: #a9be42; */
     display: block;
     margin: 10px auto;
 }
@@ -266,7 +249,7 @@ body {
     content: "";
     width: 80%;
     height: 4px;
-    background: #a9be42;
+    /* background: #a9be42; */
     display: block;
     margin: 10px auto;
 }
@@ -289,12 +272,13 @@ body {
     place-items: center;
     padding: 2rem;
     background: #f5f5f5;
+    font-size: 1.2rem;
+    line-height: 1.4rem;
+    
 }
 
 .topico {
-    background: rgb(218, 218, 184);
     padding: 1rem;
-    line-height: 1.4rem;
     display: flex;
     flex-direction: column;
 }
@@ -303,6 +287,7 @@ body {
 .titulo {
     text-align: center;
     font-size: 1.8rem;
+    font-weight: bold;
     width: 100%;
 }
 
@@ -317,7 +302,7 @@ body {
 
 .titulo-topico {
     font-size: 1.4rem;
-    font-weight: 300;
+    font-weight: bold;
     text-align: center;
     /* width: 30%; */
 }
@@ -332,15 +317,34 @@ body {
 }
 
 .info {
-    font-size: 1.2rem;
     padding: 1rem;
 }
 
-/* .info::after {
-    content: "";
-    height: 4px;
-    width: 80%;
-    background: #a9be42;
-    display: block;
-    margin: 10px auto;
-} */
+/* ------------------------------- footer */
+
+footer {
+    display: flex;
+    /* justify-content: center;
+    align-items: center; */
+    text-align: center;
+    width: var(--width-footer);
+    background: linear-gradient(to right, #a8e063, #56ab2f);
+    /* -------------------- */
+    /* padding: var(--padding-footer); */
+    font-size: var(--font-footer-container);
+    line-height: var(--lineheight-contact);
+    color: rgb(8, 71, 8);
+}
+
+.footer-box {
+    width: var(--width-footer-box);
+    padding: 1rem;
+}
+
+.footer-box i {
+    margin: var(--margin-footer-icons);
+}
+
+.footer-subtitle {
+    font-weight: var(--bold);
+}

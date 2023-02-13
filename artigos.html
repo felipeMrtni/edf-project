@@ -16,9 +16,12 @@
 <body>
     <nav class="navbar">
         <div class="navbar-container">
-            <a href="#home" class="navbar-logo" id="navbar-logo">
-                <img href="#home" src="./assets/images/logo-img.jpg" alt="logo-edf">
-            </a>
+            <div class="home-menu">
+                <a href="./index.html" class="navbar-logo" id="navbar-logo">
+                    <img  src="./assets/images/logo-img.jpg" alt="logo-edf">
+                </a>
+                <a href="./index.html" class="navbar-links">Retornar</a>
+            </div>
             <div class="navbar-toggle" id="mobile-menu">
                 <span class="bar"></span>
                 <span class="bar"></span>
@@ -26,26 +29,26 @@
             </div>
             <ul class="navbar-menu">
                 <li class="navbar-item">
-                    <a href="index.html" class="navbar-links" id="home-page">Home</a>
+                    <a href="#home" class="navbar-links" id="home-page">Home</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#licencas" class="navbar-links" id="about-page">Licenças</a>
+                    <a href="#licencas" class="navbar-links" id="licencas-page">Licenças</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#analises" class="navbar-links" id="services-page">Análises</a>
+                    <a href="#projetos" class="navbar-links" id="projetos-page">Projetos</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#projetos" class="navbar-links" id="clients-page">Projetos</a>
+                    <a href="#geoprocessamento" class="navbar-links" id="geoprocessamento-page">Geoprocessamento</a>
                 </li>
                 <li class="navbar-item">
-                    <a href="#geoprocessamento" class="navbar-links" id="contact-page">Geoprocessamento</a>
+                    <a href="#analises" class="navbar-links" id="analises-page">Análises</a>
                 </li>
             </ul>
         </div>
     </nav>
     <main class="container">
         <div class="section home-section">
-            <div class="home-artigos">
+            <div class="home-artigos" id="home">
                 <img class="home-img" src="./assets/images/edf-img.jpg" alt="" srcset="">
             </div>
         </div>
@@ -64,7 +67,7 @@
             </p>
         </div>
         <div class="artigos-container">
-            <div class="artigos licencas acordeon-container">
+            <div class="artigos licencas acordeon-container" id="licencas">
                 <div class="titulo acordeon-click">
                     <h2>Licenciamento ambiental</h2>
                 </div>
@@ -125,7 +128,7 @@
                 </div>
             </div>
 
-            <div class="artigos projetos acordeon-container">
+            <div class="artigos projetos acordeon-container" id="projetos">
                 <div class="titulo acordeon-click">
                     <h2>Projetos de segmentos da área ambiental</h2>
                 </div>
@@ -219,7 +222,7 @@
                 </div>
             </div>
 
-            <div class="artigos geoprocessamento acordeon-container">
+            <div class="artigos geoprocessamento acordeon-container" id="geoprocessamento">
                 <div class="titulo acordeon-click">
                     <h2>Geoprocessamento</h2>
                 </div>
@@ -275,7 +278,7 @@
                 </div>
             </div>
 
-            <div class="artigos analises acordeon-container">
+            <div class="artigos analises acordeon-container" id="analises">
                 <div class="titulo acordeon-click">
                     <h2>Análises e modelagem estatística</h2>
                 </div>
@@ -293,8 +296,8 @@
                     <h3 class="titulo-topico">Análises uni-variadas</h3>
                     <div class="info acordeon-info">
                         <p>
-                            As <strong style="font-weight: bold;">análises univariadas</strong> são uma técnica de análise estatística que se concentra em examinar uma única variável em um determinado conjunto de dados. Essas análises são usadas para descrever e resumir as características de uma variável, incluindo sua distribuição, média, desvio padrão, mediana, quartis, etc.<br><br>>
-                            As análises univariadas são frequentemente usadas como uma etapa inicial para uma análise mais aprofundada de dados, como as análises bivariadas ou multivariadas, que examinam a relação entre várias variáveis. As análises univariadas também podem ser usadas para identificar padrões, outliers e tendências em dados individuais.<br><br>>
+                            As <strong style="font-weight: bold;">análises univariadas</strong> são uma técnica de análise estatística que se concentra em examinar uma única variável em um determinado conjunto de dados. Essas análises são usadas para descrever e resumir as características de uma variável, incluindo sua distribuição, média, desvio padrão, mediana, quartis, etc.<br><br>
+                            As análises univariadas são frequentemente usadas como uma etapa inicial para uma análise mais aprofundada de dados, como as análises bivariadas ou multivariadas, que examinam a relação entre várias variáveis. As análises univariadas também podem ser usadas para identificar padrões, outliers e tendências em dados individuais.<br><br>
                             Em projetos ambientais, as análises univariadas podem ser usadas para examinar dados quantitativos, como a concentração de contaminantes em uma área ou a taxa de perda de habitats, e para descrever e resumir esses dados.
                         </p>
                     </div>
@@ -303,8 +306,8 @@
                     <h3 class="titulo-topico">Análises multivariadas</h3>
                     <div class="info acordeon-info">
                         <p>
-                            As análises multivariadas são uma técnica de análise estatística que examina a relação entre múltiplas variáveis em um conjunto de dados. Essas análises são usadas para identificar padrões, tendências e interações complexas entre variáveis, e para prever o comportamento de uma variável com base em múltiplas outras.<br><br>>
-                            Exemplos de análises multivariadas incluem a análise de componentes principais (PCA), a análise discriminante, a análise de cluster e a regressão multivariada. Cada uma dessas técnicas é adequada para diferentes tipos de problemas e conjuntos de dados.<br><br>>
+                            As análises multivariadas são uma técnica de análise estatística que examina a relação entre múltiplas variáveis em um conjunto de dados. Essas análises são usadas para identificar padrões, tendências e interações complexas entre variáveis, e para prever o comportamento de uma variável com base em múltiplas outras.<br><br>
+                            Exemplos de análises multivariadas incluem a análise de componentes principais (PCA), a análise discriminante, a análise de cluster e a regressão multivariada. Cada uma dessas técnicas é adequada para diferentes tipos de problemas e conjuntos de dados.<br><br>
                             Em projetos ambientais, as análises multivariadas podem ser usadas para examinar a relação entre variáveis ambientais, como a concentração de contaminantes e a qualidade da água, ou para identificar as principais fontes de poluição em uma área. As análises multivariadas também podem ser usadas para prever o impacto ambiental de projetos futuros, levando em conta múltiplos fatores.
                         </p>
                     </div>
@@ -313,9 +316,9 @@
                     <h3 class="titulo-topico">Modelagem estatística</h3>
                     <div class="info acordeon-info">
                         <p>
-                            A modelagem estatística é uma técnica de análise que usa dados e teorias estatísticas para representar ou prever o comportamento de fenômenos complexos. A ideia é construir modelos matemáticos que sejam uma boa aproximação dos dados observados e possam ser usados para fazer previsões ou simulações futuras.<br><br>>
-                            A modelagem estatística envolve o uso de métodos matemáticos, como a regressão linear ou não linear, modelos de máxima verossimilhança, entre outros, para representar relações entre variáveis e prever o comportamento futuro.<br><br>>
-                            Na área ambiental, a modelagem estatística pode ser usada para prever o impacto de eventos, como a poluição, na qualidade do ar e da água, para simular a dispersão de contaminantes no ambiente, para prever a evolução da população de espécies, entre outros exemplos.<br><br>>
+                            A modelagem estatística é uma técnica de análise que usa dados e teorias estatísticas para representar ou prever o comportamento de fenômenos complexos. A ideia é construir modelos matemáticos que sejam uma boa aproximação dos dados observados e possam ser usados para fazer previsões ou simulações futuras.<br><br>
+                            A modelagem estatística envolve o uso de métodos matemáticos, como a regressão linear ou não linear, modelos de máxima verossimilhança, entre outros, para representar relações entre variáveis e prever o comportamento futuro.<br><br>
+                            Na área ambiental, a modelagem estatística pode ser usada para prever o impacto de eventos, como a poluição, na qualidade do ar e da água, para simular a dispersão de contaminantes no ambiente, para prever a evolução da população de espécies, entre outros exemplos.<br><br>
                             A modelagem estatística é frequentemente usada em conjunto com outras técnicas de análise, como a análise de dados geográficos, para produzir resultados mais precisos e informativos.
                         </p>
                     </div>
@@ -334,5 +337,18 @@
             </div>
         </div>
     </main>
+    <footer>
+        <div class="footer-box">
+            <i class="fa fa-envelope" style="font-size:60px;color:white"></i>
+            <p class ="footer-subtitle">Email: </p>
+            <p>edfambiental@gmail.com</p>
+        </div>
+        <div class="footer-box">
+            <i class="fa fa-whatsapp" style="font-size:60px;color:white"></i>
+            <p class="footer-subtitle">Telefone:</p>
+            <p>(16) 98132-3021 || (34) 99236-5897 || (32) 99949-5998</p>
+        </div>
+    </footer>
+    <script src="./assets/js/artigos.js"></script>
 </body>
 </html>
