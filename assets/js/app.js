@@ -63,12 +63,12 @@ const highlightMenu = () => {
         homeMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1100 && scrollPos < 1000) {
+    } else if (window.innerWidth > 1100 && scrollPos < 900) {
         aboutMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         servicesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1100 && scrollPos < 2650) {
+    } else if (window.innerWidth > 1100 && scrollPos < 2350) {
         servicesMenu.classList.add('highlight');
         aboutMenu.classList.remove('highlight');
         clientMenu.classList.remove('highlight');
