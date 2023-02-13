@@ -14,13 +14,13 @@
     <link rel="stylesheet" href="./assets/css/artigos.css">
 </head>
 <body>
-    <nav class="navbar">
+    <!-- <nav class="navbar">
         <div class="navbar-container">
             <div class="home-menu">
                 <a href="./index.html" class="navbar-logo" id="navbar-logo">
                     <img  src="./assets/images/logo-img.jpg" alt="logo-edf">
                 </a>
-                <a href="./index.html" class="navbar-links">Retornar</a>
+                <a href="./index.html" class="navbar-links" id="return">Retornar</a>
             </div>
             <div class="navbar-toggle" id="mobile-menu">
                 <span class="bar"></span>
@@ -45,13 +45,65 @@
                 </li>
             </ul>
         </div>
+    </nav> -->
+    <nav class="sidebar navbar">
+        <div class="sidebar-wrapper navbar-container">
+
+            <div class="sidebar-logo">
+                <a href="index.html" class="navbar-logo" id="navbar-logo">
+                    <img  src="./assets/images/edf-img.jpg" alt="logo-edf">
+                </a>
+                <a href="index.html" class="navbar-links" id="sidebar-return">Retornar</a>
+            </div>
+            <div class="navbar-toggle" id="mobile-menu">
+                <span class="bar"></span>
+                <span class="bar"></span>
+                <span class="bar"></span>
+            </div>
+            
+            
+            <ul class="sidebar-links navbar-menu">
+                <li class="sidebar-link navbar-item">
+                    <a href="#home" class="navbar-links" id="home-page">Início</a>
+                </li>
+                <li class="sidebar-link navbar-item">
+                    <a href="#licencas" class="navbar-links" id="licencas-page">Licenças</a>
+                </li>
+                <li class="sidebar-link navbar-item">
+                    <a href="#projetos" class="navbar-links" id="projetos-page">Projetos</a>
+                </li>
+                <li class="sidebar-link navbar-item">
+                    <a href="#geoprocessamento" class="navbar-links" id="geoprocessamento-page">Geoprocessamento</a>
+                </li>
+                <li class="sidebar-link navbar-item">
+                    <a href="#analises" class="navbar-links" id="analises-page">Análises</a>
+                </li>
+                <li class="sidebar-link navbar-item">
+                    <a href="#contato" class="navbar-links" id="contact-page">Contato</a>
+                </li>
+            </ul>
+            <div class="sidebar-contact">
+                <div class="sidebar-contact-box">
+                    <i class="fa fa-envelope" style="font-size:40px;color:white"></i>
+                    <p class ="sidebar-contact-type">Email: </p>
+                    <p>edfambiental@gmail.com</p>
+                </div>
+                <div class="sidebar-contact-box">
+                    <i class="fa fa-whatsapp" style="font-size:40px;color:white"></i>
+                    <p class="sidebar-contact-type">Telefone:</p>
+                    <p>(16) 98132-3021</p>
+                    <p>(34) 99236-5897</p>
+                    <p>(32) 99949-5998</p>
+                </div>
+            </div>
+        </div>
     </nav>
     <main class="container">
-        <div class="section home-section">
+        <header class="section home-section">
             <div class="home-artigos" id="home">
                 <img class="home-img" src="./assets/images/edf-img.jpg" alt="" srcset="">
             </div>
-        </div>
+        </header>
         <div class="section greeting-section">
             <h1 class="title">
                 Seja bem vindo ao nosso ambiente virtual!
@@ -63,15 +115,13 @@
                 &nbsp&nbsp&nbsp Com uma experiência de mais de 10 anos já atuamos em projetos de florestais em 10 estados e 5 biomas brasileiros Amazônia, Cerrado, Caatinga, Mata Atlântica e Pantanal e visitando muitos tipos de vegetação dentro deles e em todos os seus estágios de maturidade. Tendo experiência em projetos com áreas fragmentadas ou contínuas, degradadas ou muito conservadas. <br>
                 &nbsp&nbsp&nbsp Em nosso ambiente você encontrará uma lista de projetos que pode ser o que você está procurando!
             </p>
-            <p class="close">
-            </p>
         </div>
-        <div class="artigos-container">
+        <section class="artigos-section">
             <div class="artigos licencas acordeon-container" id="licencas">
                 <div class="titulo acordeon-click">
                     <h2>Licenciamento ambiental</h2>
                 </div>
-                <div class="topico acordeon-info acordeon-container">
+                <div class="topico acordeon-info acordeon-container" id="licencas-a">
                     <h3 class="titulo-topico">Licenças ambientais (LP / LI / LO)</h3>
                     <div class="info acordeon-info">
                         <p>As licenças ambientais são autorizações concedidas por órgãos ambientais competentes para que empresas ou atividades realizem projetos ou atividades que possam causar impactos significativos ao meio ambiente.<br>
@@ -110,7 +160,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container">
+                <div class="topico acordeon-info acordeon-container" id="licencas-b">
                     <h3 class="titulo-topico">Programa de Regularização Ambiental (PRA)</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -118,7 +168,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container">
+                <div class="topico acordeon-info acordeon-container" id="licencas-c">
                     <h3 class="titulo-topico">Autorização de Supressão de Vegetação (ASV)</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -132,7 +182,7 @@
                 <div class="titulo acordeon-click">
                     <h2>Projetos de segmentos da área ambiental</h2>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-a">
                     <h3 class="titulo-topico">Relatório de Impacto Ambiental (RIMA)</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -140,7 +190,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-b">
                     <h3 class="titulo-topico">Inventário florestal</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -151,8 +201,7 @@
                         </p>
                     </div>
                 </div>
-
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-c">
                     <h3 class="titulo-topico">Monitoramento florestal</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -160,7 +209,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-d">
                     <h3 class="titulo-topico">Laudo de Caracterização de Vegetação e Intervenção em APP</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -168,7 +217,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-e">
                     <h3 class="titulo-topico">Plano de Recuperação de Área Degradada (PRAD)</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -176,7 +225,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-f">
                     <h3 class="titulo-topico">Projeto Técnico de Reconstituição da Flora (PTRF)</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -184,7 +233,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-g">
                     <h3 class="titulo-topico">Plano de utilização pretendida (PUP)</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -192,7 +241,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-h">
                     <h3 class="titulo-topico">Plano de Intervenção Ambiental (PIA)</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -201,7 +250,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-i">
                     <h3 class="titulo-topico">Resgate e Salvamento de Germoplasma</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -212,7 +261,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="projetos-j">
                     <h3 class="titulo-topico">Aquisição de Crédito de carbono</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -229,7 +278,7 @@
                 <p>
                     Geoprocessamento é o uso de tecnologias de informação geográfica (TIG) para coletar, processar, armazenar, analisar e apresentar informações geográficas. O geoprocessamento de mapas se refere ao processo de criação, manipulação e análise de mapas digitais, que combinam informações geográficas com informações temáticas, tais como demografia, meio ambiente, recursos naturais, entre outras. Este processo permite a visualização e análise de informações geográficas de maneira interativa e pode ser aplicado em uma ampla gama de áreas, incluindo planejamento urbano, conservação da natureza, gestão de recursos hídricos, entre outras. O geoprocessamento de mapas é uma ferramenta poderosa para a tomada de decisões informadas e para a resolução de problemas complexos relacionados ao espaço e ao ambiente.
                 </p>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="geo-a">
                     <h3 class="titulo-topico">Produção de mapas</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -248,7 +297,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="geo-b">
                     <h3 class="titulo-topico">Análises espaciais de vegetação</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -260,7 +309,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="geo-c">
                     <h3 class="titulo-topico">Mapas para planejamento de projetos</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -292,7 +341,7 @@
                     Em resumo, as análises estatísticas e a modelagem são uma ferramenta valiosa para projetos ambientais, pois ajudam a coletar e interpretar dados quantitativos, a prever impactos e tendências, a otimizar soluções e a apoiar a tomada de decisão baseada em dados.
 
                 </p>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="analises-a">
                     <h3 class="titulo-topico">Análises uni-variadas</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -302,7 +351,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="analises-b">
                     <h3 class="titulo-topico">Análises multivariadas</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -312,7 +361,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="analises-c">
                     <h3 class="titulo-topico">Modelagem estatística</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -323,7 +372,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="topico acordeon-info acordeon-container" id="">
+                <div class="topico acordeon-info acordeon-container" id="analises-d">
                     <h3 class="titulo-topico">Aprendizagem de máquina</h3>
                     <div class="info acordeon-info">
                         <p>
@@ -335,20 +384,38 @@
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
+        <section class="contact-section" id="contato">
+            <h2 class="titulo">Contato</h2>
+            <div class="contact-container">
+                <img class="contact-item contact-img" src="./assets/images/edf-img.jpg" alt="" srcset="">
+                <div class="contact-item contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti?</div>
+                <form action="https://formsubmit.co/felipecmartini@gmail.com" method="POST" class="contact-item contact-form" name="contactForm" required>
+                    <input type="hidden" name="_next" value="https://felipemrtni.github.io/edf-project/sucesso.html"  > <!--  value="http://127.0.0.1:5501/sucesso.html" // -->
+                    <div class="form-input-box">
+                        <input type="text" name="nome" class="input-area input-check name-input"  value="" placeholder="Nome completo" required>
+                        <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon nameError-icon">
+                    </div>
+                    <span class="error-msg nameError-msg">faeuhifiauhiauehgau</span>
+
+                    <div class="form-input-box">
+                        <input type="email" name="email" class="input-area input-check email-input"  value="" placeholder="email" required>
+                        <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon emailError-icon">
+                    </div>
+                    <span class="error-msg emailError-msg">aeguihioauhgiaoeuhgaeiughae</span>
+
+                    <div class="form-input-box">
+                        <textarea class="input-check text-area-input" name="mensagem" id="text-area" cols="30" rows="10" placeholder="Deixe aqui sua mensagem" required></textarea>
+                        <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon textAreaError-icon">
+                    </div>
+                    <span class="error-msg textAreaError-msg">aeoighoaeghoaeghoaegh</span>
+                    <button type="submit" class="form-submit-button" id="formButton">Enviar</button>
+                </form>
+            </div>
+        </section>
     </main>
-    <footer>
-        <div class="footer-box">
-            <i class="fa fa-envelope" style="font-size:60px;color:white"></i>
-            <p class ="footer-subtitle">Email: </p>
-            <p>edfambiental@gmail.com</p>
-        </div>
-        <div class="footer-box">
-            <i class="fa fa-whatsapp" style="font-size:60px;color:white"></i>
-            <p class="footer-subtitle">Telefone:</p>
-            <p>(16) 98132-3021 || (34) 99236-5897 || (32) 99949-5998</p>
-        </div>
-    </footer>
     <script src="./assets/js/artigos.js"></script>
+    <script src="./assets/js/mobileMenu.js"></script>
+    <script src="./assets/js/form-app.js"></script>
 </body>
 </html>

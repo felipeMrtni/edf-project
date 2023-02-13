@@ -33,13 +33,14 @@ const highlightMenu = () => {
     const projetosMenu = document.querySelector('#projetos-page');
     const geoMenu = document.querySelector('#geoprocessamento-page');
     const analisesMenu = document.querySelector('#analises-page');
+    const contactMenu = document.querySelector('#contact-page');
     let scrollPos = window.scrollY;
 
     if (window.innerWidth > 1100 && scrollPos < 500) {
         homeMenu.classList.add('highlight');
         licencasMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1100 && scrollPos < 2600) {
+    } else if (window.innerWidth > 1100 && scrollPos < 2800) {
         licencasMenu.classList.add('highlight');
         homeMenu.classList.remove('highlight');
         projetosMenu.classList.remove('highlight');
@@ -54,9 +55,14 @@ const highlightMenu = () => {
         projetosMenu.classList.remove('highlight');
         analisesMenu.classList.remove('highlight');
         return;
-    } else if (window.innerWidth > 1100 && scrollPos < 10000) {
+    } else if (window.innerWidth > 1100 && scrollPos < 10400) {
         analisesMenu.classList.add('highlight');
         geoMenu.classList.remove('highlight');
+        contactMenu.classList.remove('highlight');
+        return;
+    } else if (window.innerWidth > 1100 && scrollPos < 12000) {
+        contactMenu.classList.add('highlight');
+        analisesMenu.classList.remove('highlight');
         return;
     }
 
