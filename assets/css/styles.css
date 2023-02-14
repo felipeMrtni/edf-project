@@ -744,13 +744,13 @@ footer {
 }
 
 @media (max-width:970px) {
-    .services-container {
+    /* .services-container {
         grid-template-areas:
         "licenca analises"
         "img1 img1"
         "projetos geoprocessamento"
         "img2 img2";
-    }
+    } */
 
     .gestao {
         text-align: center;
@@ -870,9 +870,9 @@ footer {
         padding: var(--padding-mobile-services-container);
         grid-template-columns: auto;
         grid-template-areas:
-        "licenca" 
-        "img1"
         "projetos"
+        "img1"
+        "licenca" 
         "img2"
         "analises"
         "img3"
