@@ -19,7 +19,10 @@
 
             <div class="sidebar-logo">
                 <a href="index.html" class="navbar-logo" id="navbar-logo">
-                    <img  src="./assets/images/edf-img.jpg" alt="logo-edf">
+                    <picture>
+                        <source media="(max-width: 800px)" srcset="./assets/images/Logo-barra.jpg">
+                        <img  src="./assets/images/Logo-home.jpg" alt="logo-edf">
+                    </picture>
                 </a>
                 <a href="index.html" class="navbar-links" id="sidebar-return">Retornar</a>
             </div>
@@ -354,27 +357,27 @@
         <section class="contact-section" id="contato">
             <h2 class="titulo">Contato</h2>
             <div class="contact-container">
-                <img class="contact-item contact-img" src="./assets/images/edf-img.jpg" alt="" srcset="">
-                <div class="contact-item contact-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quo, corrupti?</div>
+                <img class="contact-item contact-img" src="./assets/images/Logo-home.jpg" alt="" srcset="">
+                <div class="contact-item contact-text">A qualquer momento sinta-se convidado a entrar em contato diretamente com nossos consultores para um atendimento personalizado e pessoal.</div>
                 <form action="https://formsubmit.co/felipecmartini@gmail.com" method="POST" class="contact-item contact-form" name="contactForm" required>
                     <input type="hidden" name="_next" value="https://felipemrtni.github.io/edf-project/sucesso.html"  > <!--  value="http://127.0.0.1:5501/sucesso.html" // -->
                     <div class="form-input-box">
                         <input type="text" name="nome" class="input-area input-check name-input"  value="" placeholder="Nome completo" required>
                         <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon nameError-icon">
                     </div>
-                    <span class="error-msg nameError-msg">faeuhifiauhiauehgau</span>
+                    <span class="error-msg nameError-msg"></span>
 
                     <div class="form-input-box">
                         <input type="email" name="email" class="input-area input-check email-input"  value="" placeholder="email" required>
                         <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon emailError-icon">
                     </div>
-                    <span class="error-msg emailError-msg">aeguihioauhgiaoeuhgaeiughae</span>
+                    <span class="error-msg emailError-msg"></span>
 
                     <div class="form-input-box">
                         <textarea class="input-check text-area-input" name="mensagem" id="text-area" cols="30" rows="10" placeholder="Deixe aqui sua mensagem" required></textarea>
                         <img src="./assets/images/icons/msgErrorIcon.svg" alt="" class="error-icon textAreaError-icon">
                     </div>
-                    <span class="error-msg textAreaError-msg">aeoighoaeghoaeghoaegh</span>
+                    <span class="error-msg textAreaError-msg"></span>
                     <button type="submit" class="form-submit-button" id="formButton">Enviar</button>
                 </form>
             </div>

@@ -614,6 +614,7 @@
     font-size: 1.8rem;
     width: 100%;
     border-radius: 0.5rem;
+    resize: none;
 }
 
 .text-area-input:focus {

@@ -139,6 +139,15 @@ body {
     justify-content: center;
 }
 
+.navbar-logo {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: white;
+    height: 10rem;
+}
+
 .sidebar-logo img {
     width: 100px;
 }
@@ -369,9 +378,9 @@ header {
 
 .contact-text {
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: var(--bold);
-    text-align: center;
+    text-align: start;
     color: var(--color-clients-h3);
     width: 16.5rem;
 }
@@ -416,6 +425,7 @@ header {
     font-size: 1.8rem;
     width: 100%;
     border-radius: 0.5rem;
+    resize: none;
 }
 
 .text-area-input:focus {
@@ -557,8 +567,18 @@ footer {
         flex-direction: row;
     }
     
+    .navbar-logo {
+        margin: 0 1rem;
+        height: 100%;
+        padding: 0.5rem;
+    }
+
+    .navar-logo picture {
+        display: flex;
+    }
+
     .sidebar-logo img {
-        width: 40px;
+        width: 100%;
     }
     
     #sidebar-return {
@@ -590,10 +610,6 @@ footer {
     
     .sidebar-contact-box {
         display: none;
-    }
-
-    .navbar-logo {
-        margin: 0 1rem;
     }
 
     .navbar-menu {
