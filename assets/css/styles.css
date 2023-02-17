@@ -40,7 +40,7 @@
     --lineheight-contact: 2rem;
     /* width */
     --width-navbar-container: 100%;
-    --width-navbar-logo-img: 5rem;
+    --width-navbar-logo-img: 10rem;
     --width-navbar-link: 7rem;
     --width-home-section: 100%;
     --width-home-container: 24rem;
@@ -191,19 +191,23 @@
 }
 
 .home-container {
+    position: relative;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: var(--width-home-container);
-    height: var(--height-home-container);
+    width: 20rem;
+    height: 20rem;
     border-radius: 15rem;
     transform: scale(0.8);
     background: var(--color-home-container);
 }
 
 .home-edf {
+    position: absolute;
+    top: 0rem;
     max-height: var(--height-home-logo-img);
+    transform: scale(0.8);
 }
 
 .secao {
@@ -400,7 +404,7 @@
 }
 
 .acordeon-answer span {
-    font-size: 1.2rem;
+    /* font-size: 0.2rem; */
     display: block;
 }
 
@@ -412,6 +416,7 @@
 .acordeon-answer li a {
     text-decoration: none;
     font-weight: var(--bold);
+    font-size: 0.9rem;
     color: #254914;
 }
 
@@ -563,11 +568,10 @@
 
 .contact-text {
     padding: 0 1rem;
-    font-size: 2rem;
+    font-size: 1.5rem;
     font-weight: var(--bold);
-    text-align: center;
+    text-align: start;
     color: var(--color-clients-h3);
-    width: 16.5rem;
 }
 
 .contact-form {
